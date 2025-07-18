@@ -12,44 +12,57 @@
   <header class="main-header">
     <nav class="main-nav">
       <div class="nav-home selected">
-        <!-- ICONO CASA: reemplazá src por el tuyo -->
-        <img src="home.svg" alt="Inicio" class="icon-home" />
+        <img src="/imagenes/HouseLine.svg" alt="Inicio" class="icon-home" />
       </div>
       <div class="nav-tabs">
-        <button class="nav-tab">DIV</button>
-        <button class="nav-tab">Centro integral daiwa – Rebranding</button>
-        <button class="nav-tab">Campaña social</button>
-        <button class="nav-tab">Diseño WEB y APP – Late–Nola</button>
-        <button class="nav-tab">Re diseño – VozMendocina</button>
+        <a class="nav-tab" href="/shippu.html">Shippu</a>
+        <a class="nav-tab" href="/daiwa.html">Centro integral daiwa</a>
+        <a class="nav-tab" href="/latenola.html">Diseño WEB – Late–Nola</a>
+        <a class="nav-tab" href="/farmacity.html">Farmacity</a>
+        <a class="nav-tab" href="/bbva.html">BBVA</a>
+
       </div>
     </nav>
   </header>
   
-  <!-- LAYOUT PRINCIPAL: sidebar fijo + main -->
-  <div class="layout">
-    <!-- SIDEBAR IZQUIERDO FIJO -->
-    <aside class="sidebar">
-      <div class="sidebar-logo">
-        <img src="logo_dimar_color.png" alt="Logo dim.ar">
-      </div>
-      <div class="sidebar-nombre">
-        Agustín Di Martino
-      </div>
-      <nav class="sidebar-menu">
-        <a class="sidebar-item active" href="#">
-          <span class="sidebar-icon">&#8635;</span>
-          <span>Últimos proyectos</span>
-        </a>
-        <a class="sidebar-item" href="#">
-          <span class="sidebar-icon">&#128195;</span>
-          <span>Borradores</span>
-        </a>
-        <a class="sidebar-item" href="#">
-          <span class="sidebar-icon" style="color:#e66d91;">&#10067;</span>
-          <span>¿Quién soy?</span>
-        </a>
-      </nav>
-    </aside>
+ <!-- SIDEBAR IZQUIERDO FIJO -->
+<aside class="sidebar">
+  <div class="sidebar-identidad">
+    <span class="sidebar-logo">
+      <img src="/imagenes/logooo.svg" alt="Logo dim.ar">
+    </span>
+    <span class="sidebar-nombre">
+      Agustín Di Martino
+    </span>
+  </div>
+  <nav class="sidebar-menu">
+    <!-- ÚLTIMOS PROYECTOS -->
+   <a class="sidebar-item active" href="#">
+  <span class="sidebar-icon">
+    <!-- Reloj SVG -->
+    <svg width="20" height="20" fill="none" stroke="#e66d91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="10" cy="10" r="8"/>
+      <path d="M10 6v4l2 2"/>
+    </svg>
+  </span>
+  <span>Últimos proyectos</span>
+</a>
+<a class="sidebar-item" href="/about">
+  <span class="sidebar-icon">
+    <!-- User/persona SVG -->
+    <svg width="20" height="20" fill="none" stroke="#e66d91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="7" r="4"/><path d="M2 18c0-2.2 3.6-4 8-4s8 1.8 8 4"/></svg>
+  </span>
+  <span>¿Quién soy?</span>
+</a>
+
+<div class="sidebar-logo-big">
+  <img src="/imagenes/logogrande.svg" alt="Logo dim.ar grande">
+</div>
+
+  </nav>
+
+</aside>
+
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="main-area">
@@ -77,32 +90,32 @@
       <div class="portfolio-grid">
         <!-- CARD IZQUIERDA -->
         <div class="card card-chica">
-          <div class="card-titulo">Diseño de marca</div>
-          <div class="card-desc">Te muestro como diseñamos la marca Late–Nola desde 0, y sus aplicaciones.</div>
+          <div class="card-titulo">Shippu</div>
+          <div class="card-desc">Branding para el estudio creativo Shippu y tambien su diseño web.</div>
         </div>
 
         <!-- CARD CENTRAL ARRIBA -->
         <div class="card card-media">
-          <div class="card-titulo">Campaña social</div>
-          <div class="card-desc">En este proyecto se desarrolló un diseño integral para una campaña social enfocada en la problemática de la adicción a las apuestas entre los jóvenes.</div>
+          <div class="card-titulo">Centro Integral Daiwa</div>
+          <div class="card-desc">Branding y diseño web para el Centro Daiwa, incluye aula virtual</div>
         </div>
 
         <!-- CARD DERECHA ALTA -->
         <div class="card card-alta">
-          <div class="card-titulo">Diseño de infografía interactiva</div>
-          <div class="card-desc">Las infografías más locas y divertidas, encima se mueven las cosas</div>
+          <div class="card-titulo">Farmacity</div>
+          <div class="card-desc">Una recopiliación de los (creo yo) mejores trabajos que hice en Farmacity</div>
         </div>
 
         <!-- CARD IZQUIERDA ABAJO -->
         <div class="card card-chica">
-          <div class="card-titulo">Diseño web</div>
-          <div class="card-desc">Vemos el armado para el Centro Integral Daiwa, un centro integral Japonés en BA.</div>
+          <div class="card-titulo">Late-Nola</div>
+          <div class="card-desc">Banding y diseño web Late-Nola, diversión y dinamismo</div>
         </div>
 
         <!-- CARD CENTRAL ABAJO -->
         <div class="card card-media">
-          <div class="card-titulo">Voz mendocina</div>
-          <div class="card-desc">Veamos el re diseño del diario digital Ciudadano.news (sí, en 2024)</div>
+          <div class="card-titulo">Caso de estudio BBVA</div>
+          <div class="card-desc">Rediseño de la aplicación de BBVA Argentina</div>
         </div>
        
         <!-- CARD PLACEHOLDER 1 -->
