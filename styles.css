@@ -419,19 +419,19 @@ html, body {
 
 
 .portfolio-grid {
-  width: 1015px;
   display: grid;
-  grid-template-columns: 0.26fr 0.45fr 0.26fr; /* Proporción 264 / 454 / 264 */
+  grid-template-columns: 0.26fr 0.45fr 0.26fr 0.26fr; /* Ahora 4 columnas */
   grid-template-rows: 296px 296px;
-  gap: 32px 24px; /* 32px vertical, 24px horizontal */
-  padding: 16px 40px 40px 20px; /* arriba, derecha, abajo, izquierda */
+  gap: 32px 24px;
+  padding: 16px 40px 40px 20px;
   box-sizing: border-box;
   align-items: stretch;
+
 }
 
 /* Card base styles */
 .card {
-  width: 100%;
+   width: 100%;
   height: 100%;
   border-radius: 24px;
   color: #fff;
@@ -441,10 +441,29 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* sombreado ejemplo */
   box-shadow: 0 4px 24px 0 rgba(190, 48, 94, 0.10);
   overflow: hidden;
 }
+
+.card-placeholder { 
+  background: linear-gradient(120deg, #eeeeee 0%, #cccccc 100%);
+  color: #999;
+  border: 2px dashed #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.88;
+  font-style: italic;
+}
+.card-placeholder .card-titulo {
+  color: #888;
+}
+.card-placeholder .card-desc {
+  color: #aaa;
+  opacity: 1;
+}
+
 
 /* Gradientes y posición individual, ajusta nombres según tu html */
 .card1 { background: linear-gradient(135deg, #eb8cb2 0%, #e46688 100%); grid-column: 1; grid-row: 1; }
@@ -452,6 +471,8 @@ html, body {
 .card3 { background: linear-gradient(135deg, #eb8cb2 0%, #e46688 100%); grid-column: 3 / 4; grid-row: 1 / 3; } /* alta */
 .card4 { background: linear-gradient(135deg, #ea7a32 0%, #e46666 100%); grid-column: 1; grid-row: 2; }
 .card5 { background: linear-gradient(135deg, #eb8cb2 0%, #e46688 100%); grid-column: 2; grid-row: 2; }
+.card-placeholder:nth-of-type(6) { grid-column: 4; grid-row: 1; }
+.card-placeholder:nth-of-type(7) { grid-column: 4; grid-row: 2; }
 
 /* Responsive: Mobile/tablet */
 @media (max-width: 1100px) {
