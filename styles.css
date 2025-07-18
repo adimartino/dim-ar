@@ -178,6 +178,7 @@ html, body {
   margin-left: var(--sidebar-w);
   padding: 32px 0 0 0;
   background: #fff;
+   max-width: calc(100vw - 40px);
 }
 
 /* --- PILLS --- */
@@ -258,6 +259,7 @@ html, body {
   min-width: 0;
   min-height: 0;
   transition: box-shadow 0.2s, transform 0.16s;
+  
 }
 .card:hover {
   box-shadow: 0 12px 44px 0 #e66d9177;
@@ -299,6 +301,10 @@ html, body {
   }
 }
 
+.card-alta .card-img {
+  bottom: 24px;
+  max-height: 60%;
+}
 
 /* COLORES DISTINTOS SEGÚN CARD */
 .card-media { background: linear-gradient(120deg, #e46517 0%, #e36765 100%); }
@@ -449,31 +455,17 @@ html, body {
 
 
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: 0.26fr 0.45fr 0.26fr 0.26fr; /* Ahora 4 columnas */
-  grid-template-rows: 296px 296px;
+ display: grid;
+  grid-template-columns: 0.26fr 0.45fr 0.26fr 0.26fr;
+  grid-auto-rows: minmax(320px, auto);
   gap: 32px 24px;
-  padding: 18px 40px 40px 20px;
+  padding: 18px 20px 40px 20px; /* ← padding derecho de 40 a 20 */
   box-sizing: border-box;
   align-items: stretch;
-
+  margin-right: 40px; /* ← margen derecho visual */
 }
 
-/* Card base styles */
-.card {
-   width: 100%;
-  height: 100%;
-  border-radius: 24px;
-  color: #fff;
-  font-family: 'Montserrat', Arial, sans-serif;
-  padding: 32px 24px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  box-shadow: 0 4px 24px 0 rgba(190, 48, 94, 0.10);
-  overflow: hidden;
-}
+
 
 .card-placeholder { 
   background: linear-gradient(120deg, #eeeeee 0%, #cccccc 100%);
@@ -517,6 +509,7 @@ html, body {
     min-width: 0;
     width: 100%;
     height: auto;
+    min-height: 200px; 
     aspect-ratio: 1.2/1; /* Opcional, para mantener proporción visual */
     margin: 0 auto;
   }
@@ -588,3 +581,210 @@ html, body {
     display: none;
   }
 }
+
+.card6 {
+  grid-column: 4;
+  grid-row: 1;
+}
+.card7 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.card-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.97;
+  max-height: 80%; /* ajustá este valor si querés que suba o baje */
+  bottom: 10px;     /* se separa un poquito del borde */
+}
+
+.card > *:not(img) {
+  position: relative;
+  z-index: 2;
+}
+
+/* Si el card es <a>, asegurate de que se vea bien */
+.card:has(img) {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card .card-titulo,
+.card .card-desc {
+  color: #fff;  /* Reafirma por si hay override */
+}
+
+/* En caso de tener links dentro del card */
+.card a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Para evitar que una imagen rompa visualmente */
+.card-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 75%;
+  max-width: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 0;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.15));
+  opacity: 0.95;
+}
+
+.card > *:not(img) {
+  position: relative;
+  z-index: 1;
+}
+
+.form-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .form-container {
+    background: white;
+    border-radius: 12px;
+    padding: 36px;
+    max-width: 960px;
+    width: 96vw;
+    box-shadow: 0 32px 64px rgba(0, 0, 0, 0.12), 0 8px 16px rgba(0, 0, 0, 0.04);
+    position: relative;
+  }
+
+  .form-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .form-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-left h2 {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+  .form-left p {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+  .form-left img {
+    width: 100%;
+    max-width: 280px;
+    object-fit: contain;
+  }
+
+  .form-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group label {
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #222;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .form-radio {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+
+  .form-radio input[type="radio"] {
+    accent-color: #e66d91;
+    margin-right: 6px;
+  }
+
+  .form-submit {
+    margin-top: 12px;
+    background: #e66d91;
+    color: white;
+    font-weight: 600;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .form-submit:hover {
+    background: #d6557a;
+  }
+
+  .form-note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 6px;
+  }
+
+  @media (max-width: 800px) {
+    .form-content {
+      flex-direction: column;
+    }
+    .form-row {
+      flex-direction: column;
+    }
+    .form-left img {
+      margin-top: 20px;
+      max-width: 100%;
+    }
+  }
