@@ -189,8 +189,11 @@ html, body {
   gap: 16px;
   margin-top: 32px;
   margin-left: 18px;
+  width: 340px; /* ← mismo ancho que la pill */
 }
-.pill-nuevo {
+
+button.pill-nuevo {
+  all: unset;
   display: flex;
   align-items: center;
   background: #F5F5F5;
@@ -198,10 +201,12 @@ html, body {
   padding: 12px 22px 10px 15px;
   box-shadow: none;
   gap: 10px;
-  width: 340px;
+  height: auto;     /* <-- ancho fijo, como el pill original */
   min-height: 68px;
   margin-bottom: 9px;
+  cursor: pointer;
 }
+
 .pill-icon {
   display: flex;
   align-items: center;
@@ -240,8 +245,13 @@ html, body {
   box-shadow: none;
   display: flex;
   align-items: center;
+  width: 200px;
 }
 
+.pill-nuevo,
+.pill-ultimos {
+  margin-left: 18px;
+}
 
 /* CARD FORMATO Y POSICIÓN */
 .card {
@@ -458,7 +468,7 @@ html, body {
  display: grid;
   grid-template-columns: 0.26fr 0.45fr 0.26fr 0.26fr;
   grid-auto-rows: minmax(320px, auto);
-  gap: 32px 24px;
+  gap: 16px 16px;
   padding: 18px 20px 40px 20px; /* ← padding derecho de 40 a 20 */
   box-sizing: border-box;
   align-items: stretch;
@@ -788,3 +798,93 @@ html, body {
       max-width: 100%;
     }
   }
+
+.popup-exito {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.popup-contenido {
+  background: #fff;
+  padding: 36px 30px 30px 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 64px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 460px;
+  width: 92vw;
+  animation: scaleUp 0.2s ease forwards;
+  position: relative;
+}
+.popup-contenido p {
+  font-size: 16px;
+  margin: 12px 0 0 0;
+  color: #222;
+}
+
+.popup-icono {
+  font-size: 36px;
+  display: block;
+}
+
+.popup-logo {
+  width: 160px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.popup-contenido h2 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.popup-contenido p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.4;
+  margin: 0 0 24px;
+}
+
+.popup-boton {
+  background: #e66d91;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.popup-boton:hover {
+  background: #d6557a;
+}
+
+.popup-cerrar {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 24px;
+  color: #aaa;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes scaleUp {
+  from { transform: scale(0.88); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
