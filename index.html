@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dim•ar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER FIJO -->
+  <header class="main-header">
+    <nav class="main-nav">
+      <div class="nav-home selected">
+        <!-- ICONO CASA: reemplazá src por el tuyo -->
+        <img src="home.svg" alt="Inicio" class="icon-home" />
+      </div>
+      <div class="nav-tabs">
+        <button class="nav-tab">DIV</button>
+        <button class="nav-tab">Centro integral daiwa – Rebranding</button>
+        <button class="nav-tab">Campaña social</button>
+        <button class="nav-tab">Diseño WEB y APP – Late–Nola</button>
+        <button class="nav-tab">Re diseño – VozMendocina</button>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- LAYOUT PRINCIPAL: sidebar fijo + main -->
+  <div class="layout">
+    <!-- SIDEBAR IZQUIERDO FIJO -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="logo_dimar_color.png" alt="Logo dim.ar">
+      </div>
+      <div class="sidebar-nombre">
+        Agustín Di Martino
+      </div>
+      <nav class="sidebar-menu">
+        <a class="sidebar-item active" href="#">
+          <span class="sidebar-icon">&#8635;</span>
+          <span>Últimos proyectos</span>
+        </a>
+        <a class="sidebar-item" href="#">
+          <span class="sidebar-icon">&#128195;</span>
+          <span>Borradores</span>
+        </a>
+        <a class="sidebar-item" href="#">
+          <span class="sidebar-icon" style="color:#e66d91;">&#10067;</span>
+          <span>¿Quién soy?</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-area">
+      <!-- PILLS -->
+      <div class="top-pills">
+        <div class="pill-nuevo">
+          <span class="pill-icon">
+            <!-- Plumita SVG -->
+            <svg width="32" height="32" viewBox="0 0 32 32" style="width: 26px; height: 26px;" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.7 20.8L19.1 9.4C19.5 9 20.1 9 20.5 9.4L22.6 11.5C23 11.9 23 12.5 22.6 12.9L11.2 24.3C10.9 24.6 10.6 24.7 10.3 24.8L6.1 25.9C5.7 26 5.3 25.7 5.4 25.3L6.6 21.1C6.6 20.9 6.7 20.6 7 20.3L7.7 20.8Z" stroke="#E66D91" stroke-width="2"/>
+            </svg>
+          </span>
+          <div class="pill-textos">
+            <div class="pill-titulo">Nuevo proyecto</div>
+            <div class="pill-sub">Contáctame y diseñemos juntos</div>
+          </div>
+        </div>
+        <div class="pill-ultimos">Últimos proyectos</div>
+      </div>
+
+      <!-- GRILLA PORTFOLIO -->
+
+       <div class="portfolio-content">
+
+      <div class="portfolio-grid">
+        <!-- CARD IZQUIERDA -->
+        <div class="card card-chica">
+          <div class="card-titulo">Diseño de marca</div>
+          <div class="card-desc">Te muestro como diseñamos la marca Late–Nola desde 0, y sus aplicaciones.</div>
+        </div>
+
+        <!-- CARD CENTRAL ARRIBA -->
+        <div class="card card-media">
+          <div class="card-titulo">Campaña social</div>
+          <div class="card-desc">En este proyecto se desarrolló un diseño integral para una campaña social enfocada en la problemática de la adicción a las apuestas entre los jóvenes.</div>
+        </div>
+
+        <!-- CARD DERECHA ALTA -->
+        <div class="card card-alta">
+          <div class="card-titulo">Diseño de infografía interactiva</div>
+          <div class="card-desc">Las infografías más locas y divertidas, encima se mueven las cosas</div>
+        </div>
+
+        <!-- CARD IZQUIERDA ABAJO -->
+        <div class="card card-chica">
+          <div class="card-titulo">Diseño web</div>
+          <div class="card-desc">Vemos el armado para el Centro Integral Daiwa, un centro integral Japonés en BA.</div>
+        </div>
+
+        <!-- CARD CENTRAL ABAJO -->
+        <div class="card card-media">
+          <div class="card-titulo">Voz mendocina</div>
+          <div class="card-desc">Veamos el re diseño del diario digital Ciudadano.news (sí, en 2024)</div>
+        </div>
+      </div>
+      </div>
+    </main>
+  </div>
+  <!-- JS para mobile (si agregás hamburguesa más adelante) -->
+  <script src="main.js"></script>
+</body>
+</html>
