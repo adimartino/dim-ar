@@ -1394,7 +1394,6 @@ html, body {
 
 .shippu-sub {
   position: absolute;
-  bottom: 10px; /* Ajustá este valor según visual */
   left: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
