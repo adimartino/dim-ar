@@ -416,17 +416,26 @@ button.pill-nuevo {
   width: 100vw;
 }
 .nav-home {
-  width: 62px; min-width: 62px;
+  width: 62px;
+  min-width: 62px;
   height: 100%;
-  display: flex; align-items: center; justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-right: 1px solid #e0e0e0;
-  background: #fff;
+  background: #ededed; /* ← corregido */
   transition: background 0.15s, border-bottom 0.15s;
 }
 .nav-home.selected {
   background: #fff;
   border-bottom: 3px solid #E66D91;
 }
+
+.nav-home:hover {
+  background: #fff;
+  border-bottom: 3px solid #E66D91;
+}
+
 .icon-home {
   width: 32px; height: 32px;
   display: block;
