@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>¿Quién soy? | dim•ar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER FIJO (igual que home) -->
+  <header class="main-header">
+    <nav class="main-nav">
+      <div class="nav-home">
+        <a href="/index.html">
+          <img src="/imagenes/HouseLine.svg" alt="Inicio" class="icon-home" />
+        </a>
+      </div>
+      <div class="nav-tabs">
+        <span class="nav-tab selected">¿Quién soy?</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO CON VIDEO -->
+  <section class="about-hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="videos/aboutmevideo.mp4" type="video/mp4" />
+      Tu navegador no soporta video HTML5.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-texto">
+      <h1>Agustín Di Martino</h1>
+      <h2>Diseñador UX/UI</h2>
+    </div>
+  </section>
+
+
+<section class="about-bloque-texto">
+  <div class="bloque-texto-contenido">
+    <h2 class="bloque-heading">¿Por qué yo?</h2>
+
+    <h3>¿Quién soy?, ¿Por qué elegirme cómo tu diseñador ux/ui?</h3>
+    <p>
+      Soy Agus Di Martino, diseñador UX/UI y el tipo que convierte proyectos en experiencias donde todo fluye (como cuando encontrás una fila vacía en el supermercado). Si tu aplicación o sitio web fuera una fiesta, me encargaría de que cada invitado se sienta bienvenido y sepa exactamente dónde está la barra de tragos.
+    </p>
+    <p>
+      No se trata solo de hacer algo "lindo". Para mí, un buen diseño es como una playlist bien armada: mantiene el ritmo, engancha, y hace que la gente quiera quedarse. Mis herramientas de cabecera son Figma y un par de memes que siempre logran relajar el ambiente, porque trabajar no tiene por qué ser tan serio, ¿no?
+    </p>
+    <p>
+      Así que si querés un diseño que no solo luzca bien sino que sea funcional y sin dramas, acá estoy yo.
+    </p>
+
+    <h3>¿Qué hago mejor?</h3>
+    <ul class="star-skills">
+  <li><strong>UX Researching</strong>
+    <span class="stars">
+      <span class="estrella llena"></span>
+      <span class="estrella llena"></span>
+      <span class="estrella llena"></span>
+      <span class="estrella vacia"></span>
+      <span class="estrella vacia"></span>
+    </span>
+  </li>
+
+  <li><strong>Diseño de interfaces (UI)</strong>
+    <span class="stars">
+      <span class="estrella llena"></span>
+      <span class="estrella llena"></span>
+      <span class="estrella llena"></span>
+      <span class="estrella llena"></span>
+      <span class="estrella llena"></span>
+    </span>
+  </li>
+
+  <li><strong>UX Writing</strong>
+    <span class="stars">
+      <span class="estrella llena"></span>
+      <span class="estrella llena"></span>
+      <span class="estrella vacia"></span>
+      <span class="estrella vacia"></span>
+      <span class="estrella vacia"></span>
+    </span>
+  </li>
+</ul>
+
+  </div>
+</section>
+
+<section class="cv-image-block">
+  <img src="imagenes/cv.png" alt="Currículum de Agustín Di Martino" class="cv-img" />
+</section>
+
+<section class="form-section-final">
+  <div class="form-container">
+    <form id="formularioContacto" class="form-content">
+      <div class="form-left">
+        <h2>Contactate conmigo</h2>
+        <p>¡Si querés trabajar conmigo llená el formulario!</p>
+        <img src="/imagenes/logogrande.svg" alt="Logo dim•ar" />
+      </div>
+
+      <div class="form-right">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre*</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido*</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingresá tu apellido" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" name="email" id="email" placeholder="mail@ejemplo.com.ar" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Número de teléfono</label>
+            <input type="text" name="telefono" id="telefono" placeholder="+54 911 8922 9021" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>¿Por qué razón querés comunicarte conmigo?</label>
+          <div class="form-radio">
+            <label><input type="radio" name="razon" value="Trabajar conmigo" checked /> Trabajar conmigo</label>
+            <label><input type="radio" name="razon" value="Información sobre los servicios que ofrezco" /> Información sobre los servicios que ofrezco</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" rows="3" placeholder="¡Dejá tu mensaje!"></textarea>
+        </div>
+
+        <button class="form-submit" type="submit">Enviar mensaje</button>
+        <div class="form-note">Tu mensaje será contestado a la brevedad*</div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer-final">
+  <div class="footer-texto">
+    Y si querés ver más proyectos, <a href="/index.html">volvé al inicio</a>
+  </div>
+  <img src="/imagenes/contacto.svg" alt="Contacto decorativo" class="footer-contacto-img" />
+</footer>
+
+
+  <!-- Luego seguimos con el bloque “¿Por qué yo?” -->
+  <script src="main.js"></script>
+</body>
+</html>
