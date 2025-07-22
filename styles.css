@@ -1533,7 +1533,8 @@ font-family: 'Benzin', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 100px 20px;
+  padding-bottom: 110px;
+  padding-top: 110px;
   max-width: 1300px;
   margin: 0 auto;
   gap: 60px;
@@ -1587,7 +1588,7 @@ font-family: 'Benzin', sans-serif;
 }
 
 .web-video h2 {
-    font-family: 'Benzin', sans-serif;
+  font-family: 'Benzin', sans-serif;
   font-weight: 800;
   font-size: 40px;
   margin-bottom: 40px;
@@ -1596,7 +1597,8 @@ font-family: 'Benzin', sans-serif;
 .video-showcase {
   width: 100%;
   max-width: 1200px;
-  border-radius: 14px;
+
+  border-radius: 8px;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -1634,3 +1636,187 @@ font-family: 'Benzin', sans-serif;
 .bloque-resultado li {
   margin-bottom: 10px;
 }
+
+/* === LATE-NOLA === */
+.latenola-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 80px 10%;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--late-yellow);
+}
+
+.latenola-contenedor {
+  position: relative;
+  z-index: 2;
+}
+
+.latenola-titulos {
+  position: relative;
+  display: inline-block;
+}
+
+.latenola-titulos h1 {
+  font-size: 180px;
+  line-height: 1;
+  color: var(--late-black);
+  margin: 0;
+}
+
+.latenola-sub {
+  position: absolute;
+  left: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+}
+
+.latenola-intro p {
+  font-size: 20px;
+  color: #333;
+  max-width: 680px;
+  margin-bottom: 20px;
+  padding-top: 60px;
+}
+
+.btn-latenola {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--late-purple), var(--late-rose));
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.latenola-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: auto;
+  max-width: 600px;
+  z-index: 0;
+}
+
+.latenola-proceso {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.latenola-proceso-contenido {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.latenola-proceso-contenido .subtitulo-benzin {
+  font-family: 'Benzin', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.latenola-bloque-texto p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.latenola-bloque-texto strong {
+  font-weight: 700;
+}
+
+.latenola-proceso-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+}
+
+.latenola-carrusel {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin:auto;
+  overflow: hidden;
+}
+
+.latenola-slider {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.latenola-slide {
+  flex: 0 0 30%; /* Tres slides visibles aprox */
+  max-width: 380px;
+  height: 490px;
+  border-radius: 12px;
+  background: white;
+  overflow: hidden;
+}
+
+.latenola-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* FLECHAS */
+.latenola-boton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--late-purple);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.latenola-boton:hover {
+  background-color: #8c3cd9;
+}
+
+.latenola-boton.prev {
+  left: 10px;
+}
+
+.latenola-boton.next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .latenola-carrusel {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .latenola-btn {
+    font-size: 18px;
+    padding: 10px 16px;
+  }
+  .latenola-slide {
+    max-height: 400px;
+  }
+}
+
+
