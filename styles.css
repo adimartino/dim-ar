@@ -312,6 +312,59 @@ button.pill-nuevo {
   max-height: 60%;
 }
 
+.colores-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centra horizontalmente */
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 40px auto;     /* separa y centra todo el bloque */
+}
+
+.colores-title {
+  font-family: 'Benzin', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #222;
+  align-self: flex-start;
+  margin-left: 300px; 
+}
+
+.colores {
+  display: block;
+  margin: 0 auto;
+  max-width: 1300px;        /* asegura que no desborde en pantallas chicas */
+  height: auto;
+  width: 100%;
+}
+
+.subtitulo-problems {
+  font-family: 'Benzin', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* o left si la querés alineada */
+}
+
+.problems-list {
+  list-style: disc;
+  padding-left: 40px;   /* controla sangría */
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+.problems-list li {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 8px;    /* espacio uniforme entre bullets */
+}
+
+
+
 /* COLORES DISTINTOS SEGÚN CARD */
 .card-media { background: linear-gradient(120deg, #e46517 0%, #e36765 100%); }
 .card-alta { 
@@ -1455,25 +1508,36 @@ html, body {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mi-rol .subtitulo-benzin {
-font-family: 'Benzin', sans-serif;
+  font-family: 'Benzin', sans-serif;
   font-weight: 800;
   font-size: 48px;
   margin-bottom: 30px;
   color: #222;
+  text-align: center;
+  display: inline-block; /* Para que badges acompañen */
+}
+
+.mi-rol .contenedor-texto {
+  text-align: center;          /* centra todo lo que esté dentro */
+}
+
+.mi-rol .why-image {
+  display: block;              /* para que se comporte como bloque */
+  margin: 0 auto 30px auto;    /* lo centra horizontalmente */
+  max-width: 100%;             /* asegura que no se pase de ancho */
 }
 
 .mi-rol p {
   font-size: 20px;
   line-height: 1.6;
   color: #333;
-}
-
-.mi-rol strong {
-  font-weight: 700;
-  color: #000;
+  text-align: center;
 }
 
 .proceso {
@@ -1534,7 +1598,7 @@ font-family: 'Benzin', sans-serif;
   justify-content: space-between;
   align-items: flex-start;
   padding-bottom: 110px;
-  padding-top: 110px;
+  padding-top: 70px;
   max-width: 1300px;
   margin: 0 auto;
   gap: 60px;
@@ -1548,10 +1612,12 @@ font-family: 'Benzin', sans-serif;
   
 }
 
+
+
 .web-texto h2 {
   font-family: 'Benzin', sans-serif;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 20px;
 }
 
@@ -1816,4 +1882,18 @@ font-family: 'Benzin', sans-serif;
   .latenola-slide {
     max-height: 400px;
   }
+}
+
+
+.mail-link {
+  color: #E66D91;              /* mismo tono rosa que usás */
+  font-weight: 700;
+  text-decoration: none;       /* sin subrayado */
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+}
+
+.mail-link:hover {
+  color: #d6557a;              /* tono más oscuro al pasar */
+  border-bottom: 2px solid #d6557a;
 }
