@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UX/UI Redesign – BBVA</title>
+
+  <!-- Benzin Font -->
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="imagenes/favicon" href="/imagenes/favicon.png" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <nav class="main-nav">
+      <div class="nav-home">
+        <a href="/index.html">
+          <img src="/imagenes/HouseLine.svg" alt="Home" class="icon-home" />
+        </a>
+      </div>
+      <div class="nav-tabs">
+        <a class="nav-tab" href="/shippu.html">Shippu</a>
+        <a class="nav-tab" href="/daiwa.html">Centro Integral Daiwa</a>
+        <a class="nav-tab" href="/latenola.html">WEB Design – Late–Nola</a>
+        <a class="nav-tab" href="/farmacity.html">Farmacity</a>
+        <a class="nav-tab selected" href="/bbva.html">BBVA</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="shippu-hero">
+      <div class="shippu-contenedor">
+        <div class="shippu-titulos">
+          <h1 class="benzin">APP BBVA</h1>
+          <p class="shippu-sub">Branding, Web Design & Virtual Classroom Development</p>
+        </div>
+        <div class="shippu-intro">
+          <p>
+            Daiwa is a health and wellness center focused on integrative therapies. 
+            <strong>We built a cohesive brand identity and a complete digital ecosystem,</strong> 
+            including a modern website and a virtual classroom for online courses and workshops.
+          </p>
+          <a class="btn-shippu" href="#" target="_blank">Visit website</a>
+        </div>
+        <img src="imagenes/estrella-daiwa.svg" alt="Decorative star" class="shippu-estrella">
+      </div>
+    </section>
+
+    <!-- WHY -->
+    <section class="por-que-lo-hicimos">
+      <div class="contenedor-texto">
+        <img src="imagenes/why.svg" alt="Why case of study" class="why-image" />
+        <p>
+          BBVA’s mobile app was reported by users as <strong>complex and unintuitive</strong>.  
+          This redesign focuses on creating a <strong>modern, intuitive, and accessible banking experience</strong>  
+          that reflects BBVA’s digital-first approach.
+        </p>
+      </div>
+    </section>
+
+    <div class="linea-separadora">
+      <img src="imagenes/bbva-separador.svg" alt="Decorative line" />
+    </div>
+
+    <!-- ROLE -->
+    <section class="mi-rol">
+      <div class="contenedor-texto">
+        <img src="imagenes/myrol.svg" alt="My role" class="why-image" />
+        <p>
+          I was responsible for the entire redesign process:  
+          <strong>researching user pain points, restructuring the information architecture,  
+          designing new UI components, and prototyping the improved app flows.</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="latenola-proceso">
+      <div class="latenola-proceso-contenido">
+        <h2 class="subtitulo-benzin">The process</h2>
+        <div class="latenola-bloque-texto">
+          <p><strong>1. Research & UX Audit</strong><br>
+            Conducted heuristic evaluations and user interviews to understand navigation issues  
+            and identify where users struggled during banking transactions.</p>
+
+          <p><strong>2. Information Architecture</strong><br>
+            Restructured the navigation with a simplified menu and quick-access shortcuts,  
+            improving discoverability of main features.</p>
+
+          <p><strong>3. Visual Redesign</strong><br>
+            Created a fresh, modern interface using BBVA’s corporate palette,  
+            redesigned icons, and improved typography for better readability and accessibility.</p>
+        </div>
+      </div>
+      <div class="latenola-proceso-imagen">
+        <img src="/imagenes/mockup-bbva.png" alt="BBVA redesign mockup" />
+      </div>
+    </section>
+
+    <!-- WEBSITE SECTION -->
+    <section class="web-section">
+      <div class="web-texto">
+        <h2 class="subtitulo-benzin">UX/UI Enhancements</h2>
+        <p>
+          The redesign introduces a <strong>mobile-first approach</strong>,  
+          enabling faster access to frequent actions such as transfers and bill payments.  
+          The home screen is fully customizable, and visual dashboards 
+          provide <strong>clear financial insights</strong> at a glance.
+        </p>
+      </div>
+      <div class="web-imagen">
+        <img src="imagenes/maqueta-bbva.png" alt="Mobile mockup of BBVA redesign" class="img-mockup" />
+      </div>
+    </section>
+
+    <!-- CAROUSEL -->
+    <div class="latenola-carrusel">
+      <button class="latenola-boton prev" onclick="moverSlide(-1)">←</button>
+      <div class="latenola-slider" id="latenolaSlider">
+        <div class="latenola-slide">
+          <img src="imagenes/bbva1.png" alt="Slide 1" />
+        </div>
+        <div class="latenola-slide">
+          <img src="imagenes/bbva2.png" alt="Slide 2" />
+        </div>
+        <div class="latenola-slide">
+          <img src="imagenes/bbva3.png" alt="Slide 3" />
+        </div>
+        <div class="latenola-slide">
+          <img src="imagenes/bbva4.png" alt="Slide 4" />
+        </div>
+      </div>
+      <button class="latenola-boton next" onclick="moverSlide(1)">→</button>
+    </div>
+
+    <!-- RESULTS -->
+    <section class="bloque-resultado">
+      <h2 class="titulo-benzin">Expected Results</h2>
+      <p>
+        With this redesign concept, BBVA could expect:  
+        - Faster transaction completion times (up to <strong>40% improvement</strong>)  
+        - Reduced navigation errors through clearer flows  
+        - A stronger digital brand presence aligned with modern fintech UX standards  
+        - Improved accessibility and user satisfaction across demographics
+      </p>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="web-video">
+      <video autoplay loop muted playsinline class="video-showcase" poster="/imagenes/poster-bbva.png">
+        <source src="videos/bbva.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-final">
+    <div class="form-section-final">
+      <div class="form-container">
+        <form id="formularioContacto" class="form-content">
+          <div class="form-left">
+            <h2>Contact me</h2>
+            <p>If you want to work with me, fill out the form!</p>
+            <img src="/imagenes/logogrande.svg" alt="Logo dim•ar" />
+          </div>
+
+          <div class="form-right">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">First Name*</label>
+                <input type="text" name="nombre" id="nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="apellido">Last Name*</label>
+                <input type="text" name="apellido" id="apellido" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Phone</label>
+                <input type="text" name="telefono" id="telefono" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Why are you contacting me?</label>
+              <div class="form-radio">
+                <label><input type="radio" name="razon" value="Work with me" checked> Work with me</label>
+                <label><input type="radio" name="razon" value="Service information"> Service information</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Message</label>
+              <textarea name="mensaje" id="mensaje" rows="3" placeholder="Leave your message!"></textarea>
+            </div>
+
+            <button class="form-submit" type="submit">Send message</button>
+            <div class="form-note">Your message will be answered shortly*</div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-texto">
+      If you want to see more projects, <a href="/index.html">go back to home</a>
+    </div>
+    <img src="/imagenes/contacto.svg" alt="Decorative contact image" class="footer-contacto-img" />
+  </footer>
+
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+</html>

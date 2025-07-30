@@ -207,6 +207,11 @@ button.pill-nuevo {
   cursor: pointer;
 }
 
+.pill-nuevo:hover {
+   background: var(--sidebar-hover);
+  color: var(--sidebar-active);
+}
+
 .pill-icon {
   display: flex;
   align-items: center;
@@ -245,7 +250,6 @@ button.pill-nuevo {
   box-shadow: none;
   display: flex;
   align-items: center;
-  width: 200px;
 }
 
 
@@ -347,13 +351,12 @@ button.pill-nuevo {
   color: #333;
   margin-bottom: 20px;
   text-align: center; /* o left si la querés alineada */
+  padding-top: 40px;
 }
 
 .problems-list {
   list-style: disc;
-  padding-left: 40px;   /* controla sangría */
   margin: 0 auto;
-  max-width: 700px;
   text-align: left;
 }
 
@@ -1412,7 +1415,7 @@ html, body {
   color: #333;
   max-width: 680px;
   margin-bottom: 20px;
-  padding-top: 60px;
+  padding-top: 32px;
 }
 
 .shippu-intro p strong {
@@ -1639,6 +1642,14 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.web-imagen-daiwa {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
 }
 
 .img-mockup {
@@ -1896,4 +1907,41 @@ html, body {
 .mail-link:hover {
   color: #d6557a;              /* tono más oscuro al pasar */
   border-bottom: 2px solid #d6557a;
+}
+
+
+.estrella-daiwa {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-height: 800px; /* Ajustá la altura según necesites */
+  width: auto;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .estrella-daiwa {
+    max-height: 400px;
+  }
+}
+
+.daiwa-mockup img {
+  max-width: 300px;     /* ajusta tamaño */
+  height: auto;
+  display: block;
+  margin: 0 auto;        /* centra horizontalmente */
+  filter: drop-shadow(0 6px 24px rgba(0,0,0,0.1));
+  padding-top: 60px;
+}
+
+@media (min-width: 768px) {
+  .daiwa-mockup img {
+    max-width: 420px;   /* un poco más grande en desktop */
+  }
+}
+
+@media (max-width: 480px) {
+  .daiwa-mockup img {
+    max-width: 90%;
+  }
 }

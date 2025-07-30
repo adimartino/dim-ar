@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dim.ar | Portfolio </title>
+  <title>Dim.ar | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
   <link rel="stylesheet" href="fonts.css">
@@ -20,27 +20,27 @@
 
 </head>
 <body>
-  <!-- HEADER FIJO -->
+  <!-- FIXED HEADER -->
   <header class="main-header">
     <nav class="main-nav">
       <div class="nav-home selected">
-        <img src="/imagenes/HouseLine.svg" alt="Inicio" class="icon-home" />
+        <img src="/imagenes/HouseLine.svg" alt="Home" class="icon-home" />
       </div>
       <div class="nav-tabs">
         <a class="nav-tab" href="/shippu.html">Shippu</a>
-        <a class="nav-tab" href="/daiwa.html">Centro integral daiwa</a>
-        <a class="nav-tab" href="/latenola.html">Diseño WEB – Late–Nola</a>
+        <a class="nav-tab" href="/daiwa.html">Integral Center Daiwa</a>
+        <a class="nav-tab" href="/latenola.html">Web Design – Late–Nola</a>
         <a class="nav-tab" href="/farmacity.html">Farmacity</a>
         <a class="nav-tab" href="/bbva.html">BBVA</a>
       </div>
     </nav>
   </header>
   
-  <!-- SIDEBAR IZQUIERDO FIJO -->
+  <!-- LEFT FIXED SIDEBAR -->
   <aside class="sidebar">
     <div class="sidebar-identidad">
       <span class="sidebar-logo">
-        <img src="/imagenes/logooo.svg" alt="Logo dim.ar" />
+        <img src="/imagenes/logooo.svg" alt="Dim.ar Logo" />
       </span>
       <span class="sidebar-nombre">Agustín Di Martino</span>
     </div>
@@ -52,7 +52,7 @@
             <path d="M10 6v4l2 2"/>
           </svg>
         </span>
-        <span>Últimos proyectos</span>
+        <span>Latest projects</span>
       </a>
       <a class="sidebar-item" href="/aboutme.html">
         <span class="sidebar-icon">
@@ -61,64 +61,64 @@
             <path d="M2 18c0-2.2 3.6-4 8-4s8 1.8 8 4"/>
           </svg>
         </span>
-        <span>¿Quién soy?</span>
+        <span>About Me</span>
       </a>
     </nav>
 
     <div class="sidebar-logo-big">
-      <img src="/imagenes/logogrande.svg" alt="Logo dim.ar grande" />
+      <img src="/imagenes/logogrande.svg" alt="Large Dim.ar Logo" />
     </div>
   </aside>
 
-  <!-- FORMULARIO OVERLAY -->
+  <!-- FORM OVERLAY -->
   <div id="formContacto" class="form-overlay">
     <div class="form-container">
       <button class="form-close" onclick="cerrarFormulario()">×</button>
       <form id="formularioContacto" class="form-content">
         <div class="form-left">
-          <h2>Contactate conmigo</h2>
-          <p>¡Si querés trabajar conmigo llená el formulario!</p>
+          <h2>Contact me</h2>
+          <p>If you want to work with me, fill out this form!</p>
           <img src="/imagenes/logogrande.svg" alt="Logo dim•ar" />
         </div>
 
         <div class="form-right">
           <div class="form-row">
             <div class="form-group">
-              <label for="nombre">Nombre*</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre" required />
+              <label for="nombre">First Name*</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Enter your first name" required />
             </div>
             <div class="form-group">
-              <label for="apellido">Apellido*</label>
-              <input type="text" name="apellido" id="apellido" placeholder="Ingresá tu apellido" required />
+              <label for="apellido">Last Name*</label>
+              <input type="text" name="apellido" id="apellido" placeholder="Enter your last name" required />
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
               <label for="email">Email*</label>
-              <input type="email" name="email" id="email" placeholder="mail@ejemplo.com.ar" required />
+              <input type="email" name="email" id="email" placeholder="mail@example.com" required />
             </div>
             <div class="form-group">
-              <label for="telefono">Número de teléfono</label>
+              <label for="telefono">Phone</label>
               <input type="text" name="telefono" id="telefono" placeholder="+54 911 8922 9021" />
             </div>
           </div>
 
           <div class="form-group">
-            <label>¿Por qué razón querés comunicarte conmigo?</label>
+            <label>Reason for contacting me:</label>
             <div class="form-radio">
-              <label><input type="radio" name="razon" value="Trabajar conmigo" checked /> Trabajar conmigo</label>
-              <label><input type="radio" name="razon" value="Información sobre los servicios que ofrezco" /> Información sobre los servicios que ofrezco</label>
+              <label><input type="radio" name="razon" value="Work with me" checked /> Work with me</label>
+              <label><input type="radio" name="razon" value="More information about my work" /> More information about my work</label>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" rows="3" placeholder="¡Dejá tu mensaje!"></textarea>
+            <label for="mensaje">Message</label>
+            <textarea name="mensaje" id="mensaje" rows="3" placeholder="Leave your message!"></textarea>
           </div>
 
-          <button class="form-submit" type="submit">Trabajemos juntos</button>
-          <div class="form-note">Tu mensaje será contestado a la brevedad*</div>
+          <button class="form-submit" type="submit">Let's work together</button>
+          <div class="form-note">Your message will be answered ASAP*</div>
         </div>
       </form>
     </div>
@@ -128,78 +128,78 @@
   <div class="popup-contenido">
     <button class="popup-cerrar" onclick="cerrarPopupExito()">×</button>
     <img src="/imagenes/logogrande.svg" alt="Logo dim•ar" class="popup-logo" />
-    <h2>¡Gracias por contactarte conmigo!</h2>
-    <p>Te envié un correo con la confirmación del mensaje. Lo voy a responder a la brevedad.</p>
-    <button class="popup-boton" onclick="cerrarPopupExito()">Entendido</button>
+    <h2>Thank you for contacting me!</h2>
+    <p>I sent you a confirmation email and will reply shortly.</p>
+    <button class="popup-boton" onclick="cerrarPopupExito()">Understood</button>
   </div>
 </div>
 
 
-  <!-- CONTENIDO PRINCIPAL -->
+  <!-- MAIN CONTENT -->
   <main class="main-area">
     <div class="top-pills">
       <button class="pill-nuevo" onclick="abrirFormulario()" type="button">
         <span class="pill-icon">
-          <img src="/imagenes/PenNib.svg" alt="Ícono plumita" width="26" height="26" style="width: 26px; height: 26px;" />
+          <img src="/imagenes/PenNib.svg" alt="Pen icon" width="26" height="26" style="width: 26px; height: 26px;" />
         </span>
         <div class="pill-textos">
-          <div class="pill-titulo">Nuevo proyecto</div>
-          <div class="pill-sub">Contáctame y diseñemos juntos</div>
+          <div class="pill-titulo">New Project</div>
+          <div class="pill-sub">Let's chat and work together</div>
         </div>
       </button>
-      <div class="pill-ultimos">Últimos proyectos</div>
+      <div class="pill-ultimos">Latest projects</div>
     </div>
 
     <div class="portfolio-content">
       <div class="portfolio-grid">
         <!-- CARDS -->
         <a href="/shippu.html" class="card card-chica">
-          <img src="/imagenes/shippu.png" alt="Shippu proyecto" class="card-img" />
+          <img src="/imagenes/shippu.png" alt="Shippu project" class="card-img" />
           <div class="card-titulo">Shippu</div>
-          <div class="card-desc">Branding para el estudio creativo Shippu y también su diseño web.</div>
+          <div class="card-desc">Branding for the creative studio Shippu and its website design.</div>
         </a>
 
         <a href="/daiwa.html" class="card card-media">
-          <img src="/imagenes/daiwagrande.png" alt="Daiwa proyecto" class="card-img" />
-          <div class="card-titulo">Centro Integral Daiwa</div>
-          <div class="card-desc">Branding y diseño web para el Centro Daiwa, incluye aula virtual.</div>
+          <img src="/imagenes/daiwagrande.png" alt="Daiwa project" class="card-img" />
+          <div class="card-titulo">Integral Center Daiwa</div>
+          <div class="card-desc">Branding and website design for Centro Daiwa, including a virtual classroom.</div>
         </a>
 
         <a href="/farmacity.html" class="card card-alta">
-          <img src="/imagenes/farma.svg" alt="Farmacity proyecto" class="card-img" />
+          <img src="/imagenes/farma.svg" alt="Farmacity project" class="card-img" />
           <div class="card-titulo">Farmacity</div>
-          <div class="card-desc">Una recopilación de los (creo yo) mejores trabajos que hice en Farmacity.</div>
+          <div class="card-desc">A collection of what I believe are my best works during my time at Farmacity.</div>
         </a>
 
         <a href="/latenola.html" class="card card-chica">
-          <img src="/imagenes/gandalflatenola.png" alt="Late-Nola proyecto" class="card-img" />
+          <img src="/imagenes/gandalflatenola.png" alt="Late-Nola project" class="card-img" />
           <div class="card-titulo">Late-Nola</div>
-          <div class="card-desc">Branding y diseño web Late-Nola, diversión y dinamismo.</div>
+          <div class="card-desc">Branding and website design for Late-Nola, fun and dynamic.</div>
         </a>
 
         <a href="/bbva.html" class="card card-media">
-          <img src="/imagenes/bbva.png" alt="BBVA proyecto" class="card-img" />
-          <div class="card-titulo">Caso de estudio BBVA</div>
-          <div class="card-desc">Rediseño de la aplicación de BBVA Argentina.</div>
+          <img src="/imagenes/bbva.png" alt="BBVA project" class="card-img" />
+          <div class="card-titulo">BBVA Case Study</div>
+          <div class="card-desc">Redesign of the BBVA Argentina app.</div>
         </a>
 
         <div class="card card-placeholder card6">
-          <div class="card-titulo">Próximamente</div>
-          <div class="card-desc">Nuevo proyecto en camino…</div>
+          <div class="card-titulo">Coming Soon</div>
+          <div class="card-desc">New project on the way…</div>
         </div>
 
         <div class="card card-placeholder card7">
-          <div class="card-titulo">Próximamente</div>
-          <div class="card-desc">Nuevo proyecto en camino…</div>
+          <div class="card-titulo">Coming Soon</div>
+          <div class="card-desc">New project on the way…</div>
         </div>
       </div>
     </div>
   </main>
 
-<!-- Librería EmailJS -->
+<!-- EmailJS Library -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<!-- Tu código -->
+<!-- Custom JS -->
 <script src="main.js"></script>
 
 </body>
