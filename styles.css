@@ -1652,10 +1652,28 @@ html, body {
   padding-top: 60px;
 }
 
+.web-imagen-farma {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* alineado a la derecha */
+  align-items: center;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+
+
 .img-mockup {
   max-width: 100%;
   height: auto;
-  max-height: 650px;
+  max-height: 450px;
+}
+
+.img-mockup-farma {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 12px;
 }
 
 .web-video {
@@ -1944,4 +1962,100 @@ html, body {
   .daiwa-mockup img {
     max-width: 90%;
   }
+}
+
+.bbva-proceso-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.bbva-proceso-imagen img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+@media (max-width: 900px) {
+  .bbva-proceso-imagen {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+
+.farma-proceso-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+  
+}
+
+.farma-proceso-imagen img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 12px;
+  padding-top: 60px;
+}
+
+
+@media (max-width: 900px) {
+  .farma-proceso-imagen {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.scope-complexity {
+  background: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.scope-complexity .contenedor-texto {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.scope-complexity h2 {
+  font-family: 'Benzin', sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.scope-complexity p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.scope-complexity ul {
+  list-style-type: disc;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.scope-complexity li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .scope-complexity h2 { font-size: 32px; }
+  .scope-complexity p, .scope-complexity ul { font-size: 16px; }
 }
